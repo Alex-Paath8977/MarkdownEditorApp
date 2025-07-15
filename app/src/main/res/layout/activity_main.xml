@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/btn_load_file"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Выбрать файл"/>
+
+        <EditText
+            android:id="@+id/et_url"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введите URL markdown-файла"
+            android:inputType="textUri"/>
+
+        <Button
+            android:id="@+id/btn_load_url"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Загрузить по URL"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
